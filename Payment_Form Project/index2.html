@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="Stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main"><b>PAYMENT FORM</b></h1>
+        <hr>
+        <h2><b><u>User Information</u></b></h2>
+        <hr>
+        <p>Name: * <input type="text" name="name" placeholder="Veman Suhas" required></p>
+        <fieldset>
+            <legend>
+                Gender 
+            </legend>
+            <p>
+                Male * <input type="radio" name="gender" id="gender" required >
+                Female * <input type="radio" name="gender" id="gender" required >
+                Others * <input type="radio" name="gender" id="gender" required >
+            </p>
+        </fieldset>
+        <p>Address: <textarea class="special" name="address" id="address" cols="75" rows="7" placeholder="Enter the permanent address" ></textarea></p>
+        <p>Email: * <input type="email" name="email" id="email" required placeholder="unknown@gmail.com"></p>
+        <p>Pin code: <input type="number" name="pin" id="pin" placeholder="123456"></p>
+        <hr>
+        <h2><b><u>Payment Information</u></b></h2>
+        <hr>
+        <p>
+            Payment Type: *
+            <select name="payType" id="payType" required>
+                <option value="">--select a payment type--</option>
+                <option value="cash">Cash</option>
+                <option value="phone pe">Phone pe</option>
+                <option value="G pay">Google pay</option>
+                <option value="credit_debit">credit or debit card</option>
+            </select>
+        </p>
+        <p>Payment Date: <input type="date" name="Payment" id="Payment"></p> 
+        <p>CVV or Password: *  <input type="password" name="password" id="password" required ></p>
+        <p style="text-align:center"><input type="submit" value="Pay now" >&nbsp|&nbsp;<input type="submit" value="submit">&nbsp|&nbsp;<input type="reset" value="clear"></p>
+        <hr>
+    </form>
+    </div>
+</body>
+</html>

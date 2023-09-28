@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <center>
+        <form action="" onsubmit="return false" class="form m-5">
+            <table>
+                <tr>
+                    <td class="text-center"><h1 class="display-5">Gmail Login</h1></td>
+                </tr>
+                <tr>
+                    <td class="invalid-msg"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control my-3" placeholder="Username" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="form-control my-3" placeholder="Password" required></td>
+                </tr>
+                <tr class="d-flex justify-content-center" >
+                    <td>
+                        <button class="btn btn-outline-primary" type="submit">Login</button>
+                        <button class="go-ahead btn btn-outline-danger">Go ahead</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+    <script>
+        function validate(){
+            var username = document.querySelector('input[type="text"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+            if(username.length > 5 && password.length > 5){
+                // alert("Login Successful");
+                document.querySelector('.invalid-msg').innerHTML = "<p class='alert alert-success'>Login Successful</p>";
+                return true;
+            }
+            else{
+                // alert("Login Failed");
+                document.querySelector('.invalid-msg').innerHTML = "<p class='alert alert-danger'>Invalid Username or Password</p>";
+                return false;
+            }
+        }
+
+        document.querySelector('.go-ahead').addEventListener('click', function(){
+            if(validate()){
+                window.location.href = "./boostrap.html";
+            }
+        });
+    </script>
+</body>
+</html>

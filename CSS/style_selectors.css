@@ -1,0 +1,102 @@
+p{
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px #000000;
+    white-space: pre-line;
+}
+/* ID selector */
+/* #para{
+    color: green;
+    font-size: 20px;
+} */
+a{
+    color:green;
+    text-decoration: underline;
+    font-display: block;
+}
+/* pseudocode class selector */
+a:hover{
+    color: red;
+}
+/* child combinator */
+span > em{
+    color: green;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px #000000;
+    white-space: pre-line;
+}
+/* descendant combinator */
+div span{
+    color: blue;
+    font-size: 20px;
+}
+/* #para{
+    color: green;
+    font-size: 20px;
+} */
+/* adjacent sibling combinator */
+h1+p{
+    color: green;
+    font-size: 20px;
+}
+/* general sibling combinator */
+h1~p{
+    color: orange;
+    font-size: 20px;
+}
+ul li{
+    color:blue;
+}
+/* attribute selector */
+li[class="a"],li em{
+    font-size: 10px;
+    color:chartreuse
+}
+a > img{
+    width: 46px;
+    height: 46px;
+    object-fit:scale-down;
+    overflow: hidden;
+    border-radius: 50%;
+    border-top-left-radius: 20%;
+    
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding:10px;
+    float:left;
+}
+nav{
+    background-color:black;
+    overflow:hidden;
+}
+nav a:hover{
+    color: rgb(213, 28, 28);
+}
+/* nav a:active{
+    color: rgb(255, 255, 255);
+}
+nav a:visited{
+    color: rgb(44, 55, 185);
+} */
+
+
+

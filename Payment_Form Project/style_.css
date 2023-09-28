@@ -1,0 +1,58 @@
+h1,h2{
+    color: rgb(63, 10, 148);
+    background: orange;
+    text-align: center;
+    font-weight: 50px;
+    padding: 10px;
+
+}
+h1{
+    font-size: 50px;
+}
+body{
+    background: #9d13dd;
+}
+form>p{
+    color: rgb(212, 10, 10);
+    font-size: 20px;
+    font-weight: bold;
+}
+fieldset{
+    border: 5px solid rgb(197, 5, 117);
+    border-radius: 10px;
+    background: rgb(224, 81, 165);
+}
+fieldset>p,legend{
+    color: rgb(212, 10, 10);
+    font-size: 20px;
+    font-weight: bold;
+}
+hr{
+    border: 2px solid rgb(236, 21, 218);
+}
+input,select>option{
+    border: 2px solid rgb(10, 0, 9);
+    border-radius: 10px;
+    background: rgb(245, 239, 242);
+}
+input:hover,select:hover{
+    background: rgb(13, 221, 24);
+}
+
+.special{
+    
+    background: orange;
+}
+.special:hover{
+    background: rgb(197, 5, 117);
+}
+.special:active{
+    background: rgb(197, 5, 117);
+}
+.special:focus{
+    background: rgb(197, 5, 117);
+}
+.special:visited{
+    background: rgb(197, 5, 117);
+}
+

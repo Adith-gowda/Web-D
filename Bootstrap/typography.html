@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" type="text/css">
+    <style>
+        table tr:nth-child(even):hover{
+            background-color: #c31b1b !important;
+        }
+    </style>
+</head>
+<body>
+    <p class="h1">heading 1</p>
+    <p class="h2">heading 2</p>
+    <p class="h3">heading 3</p>
+    <p class="h4">heading 4</p>
+    <p class="h5">heading 5</p>
+    <p class="h6">heading 6</p>
+    <br>
+
+    <h1>Bootstrap table</h1>
+    <table class="table table-bordered table-sm" style="width:25%; margin-left:25%; border-collapse: separate;">
+        <tr> <th>Heading 1</th> <th>Heading 2</th> </tr>
+        <tr> <td>R1C1</td> <td>R1C2</td> </tr>
+        <tr> <td>R2C1</td> <td>R2C2</td> </tr>
+        <tr> <td>R3C1</td> <td>R3C2</td> </tr>
+    </table>
+    <br>
+
+    <h1>Bootstrap forms</h1>
+    <form action="" class="form">
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter your email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" placeholder="Enter your phone" class="form-control" id="phone">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>                                                                
+</body> 
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position:relative;
+        }
+        .gola{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s,height 2s,background-color 2s,border-radius 4s;
+        }
+        .gola:hover{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+        div a{
+            background-color: darkblue;
+            color: white;
+            padding:20px;
+            border-radius: 50%;
+            position:fixed;
+            /* top:50%; */
+            left:50%;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 0.2em;
+            vertical-align: top;
+        }
+        /* @keyframes bouncing{
+            0%{
+                bottom: 0;
+                box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="gola"></div>
+    <div>
+        <a>Loading</a>
+    </div>
+</body>
+</html>
